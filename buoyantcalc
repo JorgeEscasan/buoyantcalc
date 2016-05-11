@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+
+p = 1000
+
+g = 9.81
+
+h = float(input ("How much of your boat is immersed? (meters)"))
+
+a = float(input ("What is the surface area of the bottom of your boat? (square meters)"))
+
+buoyant = p*g*h*a
+
+print ("The buoyant force is:" + str(buoyant))
