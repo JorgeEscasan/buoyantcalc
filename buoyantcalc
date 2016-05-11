@@ -4,9 +4,20 @@ p = 1000
 
 g = 9.81
 
+y = 0
+
+dy = .000000000000001
+
 h = float(input ("How much of your boat is immersed? (meters)"))
 
 a = float(input ("What is the surface area of the bottom of your boat? (square meters)"))
+
+while (y<h):
+
+    p = p + dy * a
+
+    y = y + dy
+    break
 
 buoyant = p*g*h*a
 
